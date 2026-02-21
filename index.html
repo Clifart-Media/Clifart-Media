@@ -3,53 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clifart Media - Professional Website</title>
+    <title>Clifart Media</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="lightbox.js"></script>
 </head>
 <body>
-    <!-- Hero Section -->
-    <header class="hero">
+    <header>
         <h1>Welcome to Clifart Media</h1>
-        <p>Your partner in creativity and innovation.</p>
-        <a href="#contact" class="cta-button">Get in Touch</a>
+        <p>Your creative hub for art and design.</p>
     </header>
 
-    <!-- Gallery Section -->
-    <section class="gallery">
-        <h2>Our Work</h2>
+    <section id="gallery">
+        <h2>Gallery</h2>
         <div class="gallery-grid">
-            <img src="image1.jpg" alt="Gallery Image 1" class="gallery-item">
-            <img src="image2.jpg" alt="Gallery Image 2" class="gallery-item">
-            <img src="image3.jpg" alt="Gallery Image 3" class="gallery-item">
-            <!-- More images -->
+            <a href="image1.jpg" data-lightbox="gallery"><img src="thumb_image1.jpg" alt="Art 1"></a>
+            <a href="image2.jpg" data-lightbox="gallery"><img src="thumb_image2.jpg" alt="Art 2"></a>
+            <a href="image3.jpg" data-lightbox="gallery"><img src="thumb_image3.jpg" alt="Art 3"></a>
+            <!-- Add more images as needed -->
         </div>
     </section>
 
-    <!-- Client Reviews Section -->
-    <section class="reviews">
-        <h2>What Our Clients Say</h2>
-        <blockquote>
-            <p>"Clifart Media transformed our brand image!"</p>
-            <cite>- Happy Client</cite>
-        </blockquote>
-        <blockquote>
-            <p>"Professional, creative, and results-driven."</p>
-            <cite>- Satisfied Customer</cite>
-        </blockquote>
-        <!-- More reviews -->
+    <section id="reviews">
+        <h2>Client Reviews</h2>
+        <blockquote>"Amazing work! Highly recommend!" - Client A</blockquote>
+        <blockquote>"Professional and creative services." - Client B</blockquote>
+        <!-- Add more reviews as needed -->
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <section id="contact">
+        <h2>Contact/Commission</h2>
+        <p>If you're interested in commissioning artwork, feel free to reach out!</p>
+        <ul>
+            <li>Email: <a href="mailto:info@clifartmedia.com">info@clifartmedia.com</a></li>
+            <li><a href="https://www.facebook.com/clifartmedia" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/clifartmedia" target="_blank">Instagram</a></li>
+        </ul>
     </section>
-
-    <script src="script.js"></script>
+    
+    <footer>
+        <p>&copy; 2026 Clifart Media</p>
+    </footer>
 </body>
 </html>
