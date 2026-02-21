@@ -5,43 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clifart Media</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="lightbox.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
+
+    <!-- Hero Section -->
+    <header class="hero" style="background: linear-gradient(to right, #6a11cb, #2575fc);">
         <h1>Welcome to Clifart Media</h1>
-        <p>Your creative hub for art and design.</p>
+        <p>Your vision, our creativity.</p>
     </header>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-            <a href="image1.jpg" data-lightbox="gallery"><img src="thumb_image1.jpg" alt="Art 1"></a>
-            <a href="image2.jpg" data-lightbox="gallery"><img src="thumb_image2.jpg" alt="Art 2"></a>
-            <a href="image3.jpg" data-lightbox="gallery"><img src="thumb_image3.jpg" alt="Art 3"></a>
-            <!-- Add more images as needed -->
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2>Our Work</h2>
+        <div class="grid">
+            <img src="image1.jpg" alt="Project 1" />
+            <img src="image2.jpg" alt="Project 2" />
+            <img src="image3.jpg" alt="Project 3" />
+            <img src="image4.jpg" alt="Project 4" />
         </div>
     </section>
 
-    <section id="reviews">
-        <h2>Client Reviews</h2>
-        <blockquote>"Amazing work! Highly recommend!" - Client A</blockquote>
-        <blockquote>"Professional and creative services." - Client B</blockquote>
-        <!-- Add more reviews as needed -->
+    <!-- Client Reviews Section -->
+    <section class="reviews">
+        <h2>What Our Clients Say</h2>
+        <blockquote>
+            <p>\"Clifart Media transformed our business!\" - Client A</p>
+        </blockquote>
+        <blockquote>
+            <p>\"A fantastic team that delivers results!\" - Client B</p>
+        </blockquote>
     </section>
 
-    <section id="contact">
-        <h2>Contact/Commission</h2>
-        <p>If you're interested in commissioning artwork, feel free to reach out!</p>
-        <ul>
-            <li>Email: <a href="mailto:info@clifartmedia.com">info@clifartmedia.com</a></li>
-            <li><a href="https://www.facebook.com/clifartmedia" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/clifartmedia" target="_blank">Instagram</a></li>
-        </ul>
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
-    
-    <footer>
-        <p>&copy; 2026 Clifart Media</p>
-    </footer>
+
 </body>
 </html>
