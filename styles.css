@@ -1,50 +1,49 @@
-.container {
+.hero {
+    background: linear-gradient(90deg, rgba(255, 0, 150, 1), rgba(0, 204, 255, 1));
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    animation: fadeIn 1s ease-in;
+}
+
+.gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     padding: 20px;
 }
 
-.card {
-    background: linear-gradient(145deg, #f9f9f9, #e6e6e6);
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px #d1d1d1,
-                -5px -5px 10px #ffffff;
-    margin: 15px;
-    width: 300px;
-    overflow: hidden;
+.gallery img {
+    width: 30%;
+    margin: 10px;
     transition: transform 0.2s;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.gallery img:hover {
+    transform: scale(1.05);
 }
 
-.card h2 {
-    font-family: 'Roboto', sans-serif;
-    color: #5d3ebc;
+.reviews {
+    background: #f4f4f4;
+    padding: 50px 0;
 }
 
-.card p {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-button {
-    background-color: #5d3ebc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #4a2c9c;
+.contact form {
+    width: 80%;
+    max-width: 500px;
 }
 
 @media (max-width: 768px) {
-    .card {
+    .gallery img {
         width: 100%;
     }
 }
