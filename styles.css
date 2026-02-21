@@ -1,0 +1,88 @@
+.hero {
+    background: white;
+    color: black;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-family: 'Serif';
+    font-weight: bold;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border: 2px solid gold;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.review-section {
+    background: white;
+    color: black;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.review-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-section {
+    background: white;
+    color: black;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid gold;
+}
+
+.contact-section button {
+    background-color: gold;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact-section button:hover {
+    background-color: black;
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
