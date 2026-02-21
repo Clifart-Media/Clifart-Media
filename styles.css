@@ -1,88 +1,50 @@
-.hero {
-    background: white;
-    color: black;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 3em;
-    font-family: 'Serif';
-    font-weight: bold;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 20px;
 }
 
-.gallery img {
-    width: 100%;
-    border: 2px solid gold;
+.card {
+    background: linear-gradient(145deg, #f9f9f9, #e6e6e6);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #d1d1d1,
+                -5px -5px 10px #ffffff;
+    margin: 15px;
+    width: 300px;
+    overflow: hidden;
     transition: transform 0.2s;
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
+.card:hover {
+    transform: translateY(-5px);
 }
 
-.review-section {
-    background: white;
-    color: black;
-    padding: 40px 20px;
-    text-align: center;
+.card h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #5d3ebc;
 }
 
-.review-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+.card p {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
 }
 
-.contact-section {
-    background: white;
-    color: black;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.contact-section input,
-.contact-section textarea {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid gold;
-}
-
-.contact-section button {
-    background-color: gold;
+button {
+    background-color: #5d3ebc;
     color: white;
-    padding: 10px 20px;
     border: none;
-    cursor: pointer;
-    font-size: 1em;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
 }
 
-.contact-section button:hover {
-    background-color: black;
+button:hover {
+    background-color: #4a2c9c;
 }
 
-/* Lightbox styles */
-.lightbox {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-}
-
-.lightbox img {
-    max-width: 90%;
-    max-height: 90%;
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
 }
